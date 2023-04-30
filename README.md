@@ -1,2 +1,2 @@
 # ardhanwardhani.github.io
-This is Anugra Wardhani's Personal Website
+This is Anugrah Wardhani's Personal Website
