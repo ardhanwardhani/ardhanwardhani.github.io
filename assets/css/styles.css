@@ -80,6 +80,8 @@ nav .togglebtn span {
 
 nav .navlinks {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav .navlinks li {
@@ -89,6 +91,13 @@ nav .navlinks li {
 nav .navlinks li a {
   color: #e5e5e5;
   margin-right: 2.5rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+nav .navlinks li a:hover {
+  color: #007ced;
 }
 
 .container {
@@ -243,10 +252,50 @@ nav .navlinks li a {
 }
 
 .skill-card {
-  width: 30%;
+  width: 25%;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-sizing: border-box;
+}
+
+.accordion {
+  background-color: #007ced;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion .icon {
+  font-size: 20px;
+  transition: transform 0.4s ease;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.panel ul {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.panel ul li {
+  padding: 8px 0;
+  font-size: 16px;
+  color: #333;
 }
 
 li {
@@ -257,12 +306,13 @@ li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
 .blog-card {
-  width: 33%;
-  border-radius: 8px;
+  width: 32%;
+  border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
   background-color: #e5e5e5;
@@ -291,7 +341,7 @@ li {
   margin-bottom: 50px;
 }
 
-.contact-list ul li {
+.contact-list ul li a {
   color: #e5e5e5;
 }
 
@@ -415,8 +465,9 @@ li {
     padding: 0;
   }
 
-  .btn {
+  .button-group .btn {
     padding: 8px 12px;
+    width: 30px;
   }
 
   .skill-card {
@@ -424,6 +475,9 @@ li {
     padding: 20px;
     margin-bottom: 20px;
     box-sizing: border-box;
+  }
+  #blog-list{
+    width: 100%;
   }
 
   .blog-card {
